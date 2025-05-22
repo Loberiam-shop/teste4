@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Conta - Loberiam Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo-flex">
+      <div class="logo-container">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo-loberiam.png" alt="Loberiam Shop" class="logo" />
+          <span class="logo-text">Loberiam Shop</span>
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="conta.html" class="header-icon-link active" title="Minha Conta">
+          <i class="fas fa-user-circle"></i>
+          <span>Minha Conta</span>
+        </a>
+        <a href="#" class="header-icon-link" title="Lista de Desejos">
+          <i class="fas fa-heart"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="header-icon-link cart-icon" title="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carrinho</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="produtos.html">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Eletrônicos</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Casa & Jardim</a></li>
+              <li><a href="#">Beleza</a></li>
+              <li><a href="#">Esportes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Brinquedos</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="#">Mais Vendidos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-promo-link">Baixe o App e Ganhe Descontos!</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-content page-conta">
+    <section class="page-title-section">
+      <h1>Minha Conta</h1>
+      <p class="subtitle">Acesse seus pedidos, dados cadastrais e preferências.</p>
+    </section>
+
+    <div class="conta-layout">
+      <div class="login-form-container">
+        <h2>Já sou cliente</h2>
+        <form action="#" method="post" class="form-conta">
+          <div class="form-group">
+            <label for="loginEmail">E-mail:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginSenha">Senha:</label>
+            <input type="password" id="loginSenha" name="loginSenha" required>
+          </div>
+          <div class="form-group form-options">
+            <label><input type="checkbox" name="lembrar"> Lembrar-me</label>
+            <a href="#" class="link-discreto">Esqueci minha senha</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+        </form>
+      </div>
+
+      <div class="cadastro-form-container">
+        <h2>Não tenho cadastro</h2>
+        <p>Crie sua conta para uma experiência de compra personalizada e acompanhamento de pedidos.</p>
+        <form action="#" method="post" class="form-conta">
+          <div class="form-group">
+            <label for="cadastroNome">Nome Completo:</label>
+            <input type="text" id="cadastroNome" name="cadastroNome" required>
+          </div>
+          <div class="form-group">
+            <label for="cadastroEmail">E-mail:</label>
+            <input type="email" id="cadastroEmail" name="cadastroEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="cadastroSenha">Crie uma Senha:</label>
+            <input type="password" id="cadastroSenha" name="cadastroSenha" required>
+          </div>
+           <div class="form-group">
+            <label for="cadastroConfirmaSenha">Confirme a Senha:</label>
+            <input type="password" id="cadastroConfirmaSenha" name="cadastroConfirmaSenha" required>
+          </div>
+          <div class="form-group">
+            <label><input type="checkbox" name="aceitoTermos" required> Li e aceito os <a href="politicas.html#termos-de-uso" target="_blank">Termos de Uso</a> e a <a href="politicas.html#privacidade" target="_blank">Política de Privacidade</a>.</label>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Criar Minha Conta</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="conta-dashboard-mockup">
+        <h2>Painel do Cliente (Exemplo após login)</h2>
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <i class="fas fa-box"></i>
+                <h4>Meus Pedidos</h4>
+                <p>Acompanhe seus pedidos recentes e histórico.</p>
+                <a href="#" class="btn btn-outline">Ver Pedidos</a>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Meus Endereços</h4>
+                <p>Gerencie seus endereços de entrega e cobrança.</p>
+                <a href="#" class="btn btn-outline">Gerenciar Endereços</a>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-user-edit"></i>
+                <h4>Meus Dados</h4>
+                <p>Atualize suas informações pessoais e senha.</p>
+                <a href="#" class="btn btn-outline">Editar Dados</a>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-heart"></i>
+                <h4>Lista de Desejos</h4>
+                <p>Veja os produtos que você salvou.</p>
+                <a href="#" class="btn btn-outline">Ver Favoritos</a>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-column footer-about">
+        <h4>Loberiam Shop</h4>
+        <p>Sua loja online completa. Compra inteligente com comodidade, segurança e a maior variedade de produtos para você.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="politicas.html">Termos de Uso</a></li>
+          <li><a href="politicas.html#privacidade">Política de Privacidade</a></li>
+          <li><a href="politicas.html#trocas">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Ajuda e Suporte</h4>
+        <ul>
+          <li><a href="ajuda.html">Perguntas Frequentes (FAQ)</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Minha Conta</h4>
+        <ul>
+          <li><a href="conta.html">Entrar / Cadastrar</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Minha Lista de Desejos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Atendimento</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="#">(XX) XXXXX-XXXX</a></p>
+        <p>Segunda à Sexta: 08h às 18h</p>
+      </div>
+    </div>
+    <div class="footer-payment-methods">
+        <h4>Formas de Pagamento</h4>
+        <img src="assets/payment_methods.png" alt="Formas de Pagamento">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Loberiam Shop — Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+      <p>Loberiam Shop LTDA - Rua Exemplo Fictício, 123, Cidade Exemplo, UF - CEP: 00000-000</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dropdown Menu (manter o do index.html)
+    document.querySelectorAll(".dropdown > a").forEach(dropdownToggle => {
+        dropdownToggle.addEventListener("click", event => {
+            if (window.innerWidth < 769) { 
+                 event.preventDefault();
+                 const parentLi = dropdownToggle.parentElement;
+                 parentLi.classList.toggle("open");
+            }
+        });
+    });
+  </script>
+
+</body>
+</html>
+

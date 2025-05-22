@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nome do Produto Exemplo - Loberiam Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo-flex">
+      <div class="logo-container">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo-loberiam.png" alt="Loberiam Shop" class="logo" />
+          <span class="logo-text">Loberiam Shop</span>
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="conta.html" class="header-icon-link" title="Minha Conta">
+          <i class="fas fa-user-circle"></i>
+          <span>Minha Conta</span>
+        </a>
+        <a href="#" class="header-icon-link" title="Lista de Desejos">
+          <i class="fas fa-heart"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="header-icon-link cart-icon" title="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carrinho</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="produtos.html">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Eletrônicos</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Casa & Jardim</a></li>
+              <li><a href="#">Beleza</a></li>
+              <li><a href="#">Esportes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Brinquedos</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="#">Mais Vendidos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-promo-link">Baixe o App e Ganhe Descontos!</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-content page-produto">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a> <i class="fas fa-chevron-right"></i>
+      <a href="produtos.html">Eletrônicos</a> <i class="fas fa-chevron-right"></i>
+      <span>Televisivo Ultra HD 4K</span>
+    </div>
+
+    <section class="produto-detalhe-grid">
+      <div class="produto-imagens">
+        <div class="imagem-principal-container">
+          <img src="assets/tv_large.png" alt="Televisivo Ultra HD 4K - Imagem Principal" id="imagemPrincipalProduto">
+        </div>
+        <div class="produto-thumbnails">
+          <img src="assets/tv_thumb1.png" alt="Thumbnail 1" class="thumbnail active" onclick="mudarImagemPrincipal('assets/tv_large.png')">
+          <img src="assets/tv_thumb2.png" alt="Thumbnail 2" class="thumbnail" onclick="mudarImagemPrincipal('assets/tv_thumb2_large.png')">
+          <img src="assets/tv_thumb3.png" alt="Thumbnail 3" class="thumbnail" onclick="mudarImagemPrincipal('assets/tv_thumb3_large.png')">
+          <img src="assets/tv_thumb4.png" alt="Thumbnail 4" class="thumbnail" onclick="mudarImagemPrincipal('assets/tv_thumb4_large.png')">
+        </div>
+      </div>
+
+      <div class="produto-info-compra">
+        <h1>Televisivo Ultra HD 4K - 55 Polegadas Smart</h1>
+        <div class="produto-meta-info">
+          <span class="codigo-produto">Cód. Item: 123456789</span>
+          <a href="#avaliacoesProduto" class="produto-rating-link">
+            <span class="produto-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </span>
+            (88 avaliações)
+          </a>
+        </div>
+
+        <div class="preco-bloco">
+          <p class="preco-antigo">De: R$ 2.700,00</p>
+          <p class="preco-atual">R$ 2.300,00 <span class="desconto-info">(-15%)</span></p>
+          <p class="preco-parcelado">ou até <strong>10x de R$ 230,00</strong> sem juros</p>
+          <a href="#" class="ver-meios-pagamento">Ver todos os meios de pagamento</a>
+        </div>
+
+        <div class="variacoes-produto">
+          <div class="variacao-item">
+            <label for="voltagem">Voltagem (Mockup):</label>
+            <select id="voltagem" name="voltagem">
+              <option value="110v">110V</option>
+              <option value="220v" selected>220V</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calculo-frete">
+          <label for="cepFrete">Calcular frete e prazo de entrega (Mockup):</label>
+          <div class="input-group">
+            <input type="text" id="cepFrete" placeholder="Digite seu CEP">
+            <button class="btn btn-outline">Calcular</button>
+          </div>
+          <a href="#" class="nao-sei-cep">Não sei meu CEP</a>
+        </div>
+
+        <div class="botoes-acao-produto">
+          <button class="btn btn-primary btn-comprar-agora"><i class="fas fa-bolt"></i> Comprar Agora</button>
+          <button class="btn btn-secondary btn-add-carrinho"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</button>
+          <button class="btn-wishlist-produto"><i class="far fa-heart"></i> Adicionar à Lista de Desejos</button>
+        </div>
+        
+        <div class="info-adicional-compra">
+            <p><i class="fas fa-shield-alt"></i> Compra Segura</p>
+            <p><i class="fas fa-undo-alt"></i> Devolução Grátis em até 7 dias</p>
+            <p><i class="fas fa-truck"></i> Entrega para todo o Brasil</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="produto-descricao-detalhada">
+      <h2>Descrição do Produto</h2>
+      <p>Experimente uma imersão visual incomparável com o Televisivo Ultra HD 4K de 55 polegadas. Com resolução quatro vezes maior que o Full HD, esta Smart TV oferece cores vibrantes, contraste impressionante e detalhes nítidos que transformam sua sala em um verdadeiro cinema. Navegue pelos seus aplicativos favoritos, assista a filmes, séries e jogue com qualidade de imagem superior.</p>
+      <p><strong>Principais Características:</strong></p>
+      <ul>
+        <li>Tela de 55 polegadas com resolução Ultra HD 4K (3840 x 2160 pixels)</li>
+        <li>Tecnologia HDR para cores mais vivas e contraste aprimorado</li>
+        <li>Sistema Smart com acesso a Netflix, YouTube, Prime Video e outros apps</li>
+        <li>Processador Quad-Core para navegação rápida e fluida</li>
+        <li>Múltiplas entradas HDMI e USB para conectar seus dispositivos</li>
+        <li>Design moderno com bordas finas para maior imersão</li>
+        <li>Áudio potente e imersivo com tecnologia Dolby Digital</li>
+      </ul>
+      <p>Ideal para quem busca tecnologia de ponta e entretenimento de alta qualidade, o Televisivo Ultra HD 4K é a escolha perfeita para sua casa.</p>
+    </section>
+
+    <section class="produto-especificacoes">
+        <h2>Especificações Técnicas (Mockup)</h2>
+        <table>
+            <tr>
+                <th>Característica</th>
+                <th>Detalhe</th>
+            </tr>
+            <tr>
+                <td>Tamanho da Tela</td>
+                <td>55 polegadas</td>
+            </tr>
+            <tr>
+                <td>Resolução</td>
+                <td>Ultra HD 4K (3840 x 2160)</td>
+            </tr>
+            <tr>
+                <td>Tipo de Tela</td>
+                <td>LED</td>
+            </tr>
+            <tr>
+                <td>Frequência</td>
+                <td>60Hz Nativo (120Hz Motion Rate)</td>
+            </tr>
+            <tr>
+                <td>Sistema Operacional</td>
+                <td>WebOS (Exemplo)</td>
+            </tr>
+            <tr>
+                <td>Conexões</td>
+                <td>3x HDMI, 2x USB, Wi-Fi, Ethernet, Bluetooth</td>
+            </tr>
+            <tr>
+                <td>Potência de Áudio</td>
+                <td>20W RMS</td>
+            </tr>
+            <tr>
+                <td>Dimensões (L x A x P) com base</td>
+                <td>123cm x 78cm x 25cm</td>
+            </tr>
+            <tr>
+                <td>Peso com base</td>
+                <td>14.5 kg</td>
+            </tr>
+            <tr>
+                <td>Garantia</td>
+                <td>12 meses</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="avaliacoesProduto" class="produto-avaliacoes-clientes">
+      <h2>Avaliações dos Clientes (Mockup)</h2>
+      <div class="resumo-avaliacoes">
+        <div class="nota-media">
+          <strong>4.2</strong> de 5 estrelas
+          <div class="estrelas-grandes">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+          </div>
+          Baseado em 88 avaliações
+        </div>
+        <button class="btn btn-outline">Avaliar este produto</button>
+      </div>
+      <div class="lista-avaliacoes">
+        <div class="avaliacao-item">
+          <div class="avaliacao-autor-nota">
+            <span class="autor-nome">Fernanda M.</span>
+            <span class="avaliacao-estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          </div>
+          <h5 class="avaliacao-titulo">Excelente Imagem!</h5>
+          <p class="avaliacao-texto">A qualidade da imagem é impressionante, cores muito vivas. A entrega foi super rápida. Recomendo!</p>
+          <span class="avaliacao-data">02 de Maio de 2025</span>
+        </div>
+        <div class="avaliacao-item">
+          <div class="avaliacao-autor-nota">
+            <span class="autor-nome">Ricardo S.</span>
+            <span class="avaliacao-estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+          </div>
+          <h5 class="avaliacao-titulo">Bom custo-benefício</h5>
+          <p class="avaliacao-texto">Pelo preço, a TV entrega uma ótima experiência. O sistema smart é um pouco lento às vezes, mas nada que atrapalhe muito.</p>
+          <span class="avaliacao-data">28 de Abril de 2025</span>
+        </div>
+        <!-- Adicionar mais avaliações mockup -->
+        <a href="#" class="ver-todas-avaliacoes">Ver todas as 88 avaliações</a>
+      </div>
+    </section>
+
+    <section class="produtos-relacionados-section">
+      <h2 class="section-title">Quem Viu, Viu Também (Mockup)</h2>
+      <div class="products products-grid">
+        <!-- Card de produto relacionado -->
+        <div class="card product-card">
+          <a href="#" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/soundbar_mock.png" alt="Soundbar Pro" class="product-image"/>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Soundbar Pro Xtreme Áudio</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (55)
+              </div>
+              <p class="product-price">R$ 499,00</p>
+            </div>
+          </a>
+           <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Ver Produto</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+         <div class="card product-card">
+          <a href="#" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/suporte_tv_mock.png" alt="Suporte Articulado" class="product-image"/>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Suporte Articulado para TV</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (72)
+              </div>
+              <p class="product-price">R$ 189,90</p>
+            </div>
+          </a>
+           <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Ver Produto</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        <!-- Adicionar mais cards de produtos relacionados -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-column footer-about">
+        <h4>Loberiam Shop</h4>
+        <p>Sua loja online completa. Compra inteligente com comodidade, segurança e a maior variedade de produtos para você.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="politicas.html">Termos de Uso</a></li>
+          <li><a href="politicas.html#privacidade">Política de Privacidade</a></li>
+          <li><a href="politicas.html#trocas">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Ajuda e Suporte</h4>
+        <ul>
+          <li><a href="ajuda.html">Perguntas Frequentes (FAQ)</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Minha Conta</h4>
+        <ul>
+          <li><a href="conta.html">Entrar / Cadastrar</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Minha Lista de Desejos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Atendimento</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="#">(XX) XXXXX-XXXX</a></p>
+        <p>Segunda à Sexta: 08h às 18h</p>
+      </div>
+    </div>
+    <div class="footer-payment-methods">
+        <h4>Formas de Pagamento</h4>
+        <img src="assets/payment_methods.png" alt="Formas de Pagamento">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Loberiam Shop — Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+      <p>Loberiam Shop LTDA - Rua Exemplo Fictício, 123, Cidade Exemplo, UF - CEP: 00000-000</p>
+    </div>
+  </footer>
+
+  <script>
+    function mudarImagemPrincipal(novaImagemSrc) {
+      document.getElementById('imagemPrincipalProduto').src = novaImagemSrc;
+      document.querySelectorAll('.produto-thumbnails .thumbnail').forEach(thumb => thumb.classList.remove('active'));
+      // Lógica para adicionar 'active' ao thumbnail clicado (precisaria de IDs ou data-attributes nos thumbs)
+    }
+
+    // Script do Carrossel (se houver outros na página, adaptar ou isolar)
+    // ... (manter scripts de carrossel e dropdown do index.html se necessário e adaptado)
+  </script>
+
+</body>
+</html>
+

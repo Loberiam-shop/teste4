@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos - Loberiam Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo-flex">
+      <div class="logo-container">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo-loberiam.png" alt="Loberiam Shop" class="logo" />
+          <span class="logo-text">Loberiam Shop</span>
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="conta.html" class="header-icon-link" title="Minha Conta">
+          <i class="fas fa-user-circle"></i>
+          <span>Minha Conta</span>
+        </a>
+        <a href="#" class="header-icon-link" title="Lista de Desejos">
+          <i class="fas fa-heart"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="header-icon-link cart-icon" title="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carrinho</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="produtos.html" class="active">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Eletrônicos</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Casa & Jardim</a></li>
+              <li><a href="#">Beleza</a></li>
+              <li><a href="#">Esportes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Brinquedos</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="#">Mais Vendidos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-promo-link">Baixe o App e Ganhe Descontos!</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-content page-produtos-listagem">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a> <i class="fas fa-chevron-right"></i>
+      <span>Todos os Produtos</span>
+      <!-- Ou: <span>Eletrônicos</span> se fosse uma categoria específica -->
+    </div>
+
+    <div class="produtos-listagem-layout">
+      <aside class="filtros-sidebar">
+        <h3>Filtros (Mockup)</h3>
+        
+        <div class="filtro-grupo">
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="#" class="filtro-categoria active">Todos os Produtos (250)</a></li>
+            <li><a href="#" class="filtro-categoria">Eletrônicos (85)</a></li>
+            <li><a href="#" class="filtro-categoria">Moda (60)</a></li>
+            <li><a href="#" class="filtro-categoria">Casa & Jardim (40)</a></li>
+            <li><a href="#" class="filtro-categoria">Beleza (35)</a></li>
+            <li><a href="#" class="filtro-categoria">Esportes (30)</a></li>
+          </ul>
+        </div>
+
+        <div class="filtro-grupo">
+          <h4>Preço</h4>
+          <div class="filtro-preco-range">
+            <input type="range" id="precoMin" name="precoMin" min="0" max="1000" value="50">
+            <input type="range" id="precoMax" name="precoMax" min="0" max="5000" value="2500">
+            <div class="preco-labels">
+              <span>R$ 50</span>
+              <span>R$ 2500+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filtro-grupo">
+          <h4>Marcas (Exemplo)</h4>
+          <ul>
+            <li><label><input type="checkbox" name="marca" value="marcaA"> Marca Exemplo A (25)</label></li>
+            <li><label><input type="checkbox" name="marca" value="marcaB"> Marca Exemplo B (18)</label></li>
+            <li><label><input type="checkbox" name="marca" value="marcaC"> Marca Exemplo C (12)</label></li>
+          </ul>
+          <a href="#" class="ver-mais-filtros">Ver todas as marcas</a>
+        </div>
+
+        <div class="filtro-grupo">
+          <h4>Avaliação</h4>
+          <ul>
+            <li><label><input type="radio" name="avaliacao" value="5"><span class="filtro-estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> (30)</label></li>
+            <li><label><input type="radio" name="avaliacao" value="4"><span class="filtro-estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> e acima (80)</label></li>
+            <li><label><input type="radio" name="avaliacao" value="3"><span class="filtro-estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span> e acima (120)</label></li>
+          </ul>
+        </div>
+        <button class="btn btn-primary btn-block btn-aplicar-filtros">Aplicar Filtros</button>
+        <button class="btn btn-outline btn-block btn-limpar-filtros">Limpar Filtros</button>
+      </aside>
+
+      <section class="produtos-grid-container">
+        <div class="listagem-header">
+          <h2>Todos os Produtos</h2>
+          <div class="ordenacao-container">
+            <label for="ordenarPor">Ordenar por:</label>
+            <select id="ordenarPor" name="ordenarPor">
+              <option value="relevancia">Mais Relevantes</option>
+              <option value="menor-preco">Menor Preço</option>
+              <option value="maior-preco">Maior Preço</option>
+              <option value="mais-vendidos">Mais Vendidos</option>
+              <option value="avaliacoes">Melhores Avaliações</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products products-grid">
+          <!-- Card de produto -->
+          <div class="card product-card">
+            <a href="produto_exemplo.html" class="product-link">
+              <div class="product-image-container">
+                <img src="assets/tv.png" alt="Televisivo Ultra HD 4K" class="product-image"/>
+                <span class="discount-badge">-15%</span>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Televisivo Ultra HD 4K - 55 Polegadas</h4>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (88)
+                </div>
+                <p class="product-price"><span class="old-price">R$ 2.700,00</span> R$ 2.300,00</p>
+                <p class="product-installments">ou 10x de R$ 230,00</p>
+              </div>
+            </a>
+            <div class="product-actions">
+              <button class="btn btn-secondary btn-block">Comprar Agora</button>
+              <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <!-- Repetir cards para outros produtos -->
+          <div class="card product-card">
+            <a href="produto_exemplo.html" class="product-link">
+              <div class="product-image-container">
+                <img src="assets/smartwatch.png" alt="Smartwatch Advanced Fit" class="product-image"/>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Smartwatch Advanced Fit Monitor Cardíaco</h4>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (102)
+                </div>
+                <p class="product-price">R$ 300,00</p>
+              </div>
+            </a>
+            <div class="product-actions">
+              <button class="btn btn-secondary btn-block">Comprar Agora</button>
+              <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+           <div class="card product-card">
+            <a href="produto_exemplo.html" class="product-link">
+              <div class="product-image-container">
+                <img src="assets/puncia-dac.png" alt="Punxia DAC Hi-Fi" class="product-image"/>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Punxia DAC Hi-Fi Áudio de Alta Resolução</h4>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (45)
+                  </div>
+                <p class="product-price">R$ 155,00</p>
+              </div>
+            </a>
+            <div class="product-actions">
+                <button class="btn btn-secondary btn-block">Comprar Agora</button>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="card product-card">
+            <a href="produto_exemplo.html" class="product-link">
+              <div class="product-image-container">
+                <img src="assets/lampanlar.png" alt="Lâmpada Inteligente LED" class="product-image"/>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Lâmpada Inteligente LED RGB Wi-Fi</h4>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (67)
+                  </div>
+                <p class="product-price">R$ 120,00</p>
+              </div>
+            </a>
+            <div class="product-actions">
+                <button class="btn btn-secondary btn-block">Comprar Agora</button>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <!-- Adicionar mais 8 cards de exemplo para preencher a grade -->
+        </div>
+
+        <nav class="paginacao" aria-label="Paginação de produtos">
+          <ul>
+            <li><a href="#" class="page-link prev disabled" aria-label="Anterior"><i class="fas fa-chevron-left"></i></a></li>
+            <li><a href="#" class="page-link active" aria-current="page">1</a></li>
+            <li><a href="#" class="page-link">2</a></li>
+            <li><a href="#" class="page-link">3</a></li>
+            <li><span class="page-link ellipsis">...</span></li>
+            <li><a href="#" class="page-link">10</a></li>
+            <li><a href="#" class="page-link next" aria-label="Próxima"><i class="fas fa-chevron-right"></i></a></li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-column footer-about">
+        <h4>Loberiam Shop</h4>
+        <p>Sua loja online completa. Compra inteligente com comodidade, segurança e a maior variedade de produtos para você.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="politicas.html">Termos de Uso</a></li>
+          <li><a href="politicas.html#privacidade">Política de Privacidade</a></li>
+          <li><a href="politicas.html#trocas">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Ajuda e Suporte</h4>
+        <ul>
+          <li><a href="ajuda.html">Perguntas Frequentes (FAQ)</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Minha Conta</h4>
+        <ul>
+          <li><a href="conta.html">Entrar / Cadastrar</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Minha Lista de Desejos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Atendimento</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="#">(XX) XXXXX-XXXX</a></p>
+        <p>Segunda à Sexta: 08h às 18h</p>
+      </div>
+    </div>
+    <div class="footer-payment-methods">
+        <h4>Formas de Pagamento</h4>
+        <img src="assets/payment_methods.png" alt="Formas de Pagamento">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Loberiam Shop — Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+      <p>Loberiam Shop LTDA - Rua Exemplo Fictício, 123, Cidade Exemplo, UF - CEP: 00000-000</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scripts para interatividade (dropdown, etc.) podem ser adicionados aqui ou no final do body
+    // Exemplo: Dropdown Menu (manter o do index.html)
+    document.querySelectorAll(".dropdown > a").forEach(dropdownToggle => {
+        dropdownToggle.addEventListener("click", event => {
+            if (window.innerWidth < 769) { 
+                 event.preventDefault();
+                 const parentLi = dropdownToggle.parentElement;
+                 parentLi.classList.toggle("open");
+            }
+        });
+    });
+  </script>
+
+</body>
+</html>
+

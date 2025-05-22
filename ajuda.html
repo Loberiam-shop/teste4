@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajuda e FAQ - Loberiam Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo-flex">
+      <div class="logo-container">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo-loberiam.png" alt="Loberiam Shop" class="logo" />
+          <span class="logo-text">Loberiam Shop</span>
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="conta.html" class="header-icon-link" title="Minha Conta">
+          <i class="fas fa-user-circle"></i>
+          <span>Minha Conta</span>
+        </a>
+        <a href="#" class="header-icon-link" title="Lista de Desejos">
+          <i class="fas fa-heart"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="header-icon-link cart-icon" title="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carrinho</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="produtos.html">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Eletrônicos</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Casa & Jardim</a></li>
+              <li><a href="#">Beleza</a></li>
+              <li><a href="#">Esportes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Brinquedos</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="#">Mais Vendidos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="ajuda.html" class="active">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-promo-link">Baixe o App e Ganhe Descontos!</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-content page-ajuda">
+    <section class="page-title-section">
+      <h1>Central de Ajuda</h1>
+      <p class="subtitle">Encontre respostas para suas dúvidas ou entre em contato conosco.</p>
+      <div class="faq-search-container">
+        <input type="text" placeholder="Digite sua dúvida aqui... (Mockup)" class="faq-search-input">
+        <button class="btn btn-primary"><i class="fas fa-search"></i> Buscar</button>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Perguntas Frequentes (FAQ)</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Como faço para comprar na Loberiam Shop?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Comprar na Loberiam Shop é fácil e seguro! Siga os passos:</p>
+            <ol>
+              <li>Navegue pelas categorias ou utilize a barra de busca para encontrar o produto desejado.</li>
+              <li>Clique no produto para ver mais detalhes.</li>
+              <li>Escolha as variações (cor, tamanho, etc.), se houver, e clique em "Adicionar ao Carrinho" ou "Comprar Agora".</li>
+              <li>No carrinho, revise seus itens e clique em "Finalizar Compra".</li>
+              <li>Faça login ou crie uma conta, preencha seus dados de entrega e escolha a forma de pagamento.</li>
+              <li>Confirme seu pedido e pronto! Você receberá atualizações por e-mail.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Quais são as formas de pagamento aceitas?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Aceitamos diversas formas de pagamento para sua comodidade (Mockup):</p>
+            <ul>
+              <li>Cartões de Crédito (Visa, Mastercard, Elo, Amex, Hipercard) - Parcelamento em até 10x sem juros (verifique condições).</li>
+              <li>Boleto Bancário (Pagamento à vista).</li>
+              <li>PIX (Pagamento instantâneo com desconto adicional - verifique promoções).</li>
+            </ul>
+            <p>Todas as transações são seguras e protegidas.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Como funciona a entrega e qual o prazo?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>O prazo de entrega varia de acordo com o CEP de destino e a modalidade de frete escolhida. Você pode simular o prazo e o valor do frete na página do produto ou no carrinho de compras, informando seu CEP.</p>
+            <p>Trabalhamos com os Correios e transportadoras parceiras para garantir que seu pedido chegue o mais rápido possível e em perfeitas condições. Você receberá um código de rastreio para acompanhar sua entrega.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Posso trocar ou devolver um produto?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Sim! Nossa política de trocas e devoluções visa garantir sua satisfação. Você pode solicitar a troca ou devolução em até 7 (sete) dias corridos após o recebimento do produto, em caso de arrependimento, defeito ou não conformidade.</p>
+            <p>Para mais detalhes sobre as condições e como proceder, consulte nossa <a href="politicas.html#trocas">Política de Trocas e Devoluções</a>.</p>
+          </div>
+        </div>
+
+         <div class="accordion-item">
+          <button class="accordion-header">
+            Como acompanhar meu pedido?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Após a confirmação do pagamento e envio do seu pedido, você receberá um e-mail com o código de rastreamento. Com ele, você poderá acompanhar o status da entrega diretamente no site da transportadora ou dos Correios.</p>
+            <p>Você também pode acessar a seção "Meus Pedidos" em sua conta na Loberiam Shop para verificar o status atualizado (funcionalidade mockup).</p>
+          </div>
+        </div>
+
+        <!-- Adicionar mais perguntas e respostas mockup -->
+      </div>
+    </section>
+
+    <section class="contato-direto-section">
+      <h2>Ainda precisa de ajuda?</h2>
+      <p>Se não encontrou a resposta para sua dúvida em nosso FAQ, entre em contato conosco. Nossa equipe está pronta para te atender!</p>
+      <div class="contato-opcoes">
+        <div class="contato-card">
+          <i class="fas fa-envelope"></i>
+          <h3>E-mail</h3>
+          <p>Envie sua mensagem para:</p>
+          <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a>
+          <p>Respondemos em até 24h úteis.</p>
+        </div>
+        <div class="contato-card">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp (Mockup)</h3>
+          <p>Fale conosco pelo número:</p>
+          <a href="#">(XX) XXXXX-XXXX</a>
+          <p>Segunda à Sexta, das 08h às 18h.</p>
+        </div>
+        <div class="contato-card">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Telefone (Mockup)</h3>
+          <p>Ligue para nossa central:</p>
+          <p><strong>0800 XXX XXXX</strong></p>
+          <p>Segunda à Sexta, das 08h às 18h.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-column footer-about">
+        <h4>Loberiam Shop</h4>
+        <p>Sua loja online completa. Compra inteligente com comodidade, segurança e a maior variedade de produtos para você.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="politicas.html">Termos de Uso</a></li>
+          <li><a href="politicas.html#privacidade">Política de Privacidade</a></li>
+          <li><a href="politicas.html#trocas">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Ajuda e Suporte</h4>
+        <ul>
+          <li><a href="ajuda.html">Perguntas Frequentes (FAQ)</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Minha Conta</h4>
+        <ul>
+          <li><a href="conta.html">Entrar / Cadastrar</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Minha Lista de Desejos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Atendimento</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="#">(XX) XXXXX-XXXX</a></p>
+        <p>Segunda à Sexta: 08h às 18h</p>
+      </div>
+    </div>
+    <div class="footer-payment-methods">
+        <h4>Formas de Pagamento</h4>
+        <img src="assets/payment_methods.png" alt="Formas de Pagamento">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Loberiam Shop — Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+      <p>Loberiam Shop LTDA - Rua Exemplo Fictício, 123, Cidade Exemplo, UF - CEP: 00000-000</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script para Accordion FAQ
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach(item => {
+      const header = item.querySelector(".accordion-header");
+      header.addEventListener("click", () => {
+        const currentlyActive = document.querySelector(".accordion-item.active");
+        if (currentlyActive && currentlyActive !== item) {
+          currentlyActive.classList.remove("active");
+          currentlyActive.querySelector(".accordion-content").style.maxHeight = 0;
+        }
+
+        item.classList.toggle("active");
+        const content = item.querySelector(".accordion-content");
+        if (item.classList.contains("active")) {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+          content.style.maxHeight = 0;
+        }
+      });
+    });
+
+    // Dropdown Menu (manter o do index.html)
+    document.querySelectorAll(".dropdown > a").forEach(dropdownToggle => {
+        dropdownToggle.addEventListener("click", event => {
+            if (window.innerWidth < 769) { 
+                 event.preventDefault();
+                 const parentLi = dropdownToggle.parentElement;
+                 parentLi.classList.toggle("open");
+            }
+        });
+    });
+  </script>
+
+</body>
+</html>
+

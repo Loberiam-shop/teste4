@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loberiam Shop - Seu e-commerce completo com os melhores produtos, preços e condições. Compre com segurança e receba em casa." />
+  <meta name="keywords" content="e-commerce, loja online, compras, produtos, ofertas, eletrônicos, moda, casa, jardim" />
+  <meta name="author" content="Loberiam Shop" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Loberiam Shop - Seu E-commerce Completo" />
+  <meta property="og:description" content="Encontre os melhores produtos com os melhores preços. Frete grátis, pagamento facilitado e entrega rápida." />
+  <meta property="og:image" content="assets/logo-loberiam.png" />
+  <meta property="og:url" content="https://loberiam.github.io/teste1/" />
+  <meta property="og:type" content="website" />
+  <title>Loberiam Shop - Seu E-commerce Completo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="paginas_secundarias.css" />
+  <link rel="stylesheet" href="funcionalidades.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <header class="topo">
+    <!-- Barra de anúncios superior -->
+    <div class="top-announcement-bar">
+      <div class="container">
+        <div class="announcement-slider">
+          <div class="announcement-slide active">
+            <i class="fas fa-truck"></i> Frete grátis para compras acima de R$ 199
+          </div>
+          <div class="announcement-slide">
+            <i class="fas fa-credit-card"></i> Até 12x sem juros no cartão
+          </div>
+          <div class="announcement-slide">
+            <i class="fas fa-percent"></i> 10% OFF na primeira compra com o cupom BEMVINDO10
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container topo-flex">
+      <div class="logo-container">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo-loberiam.png" alt="Loberiam Shop" class="logo" />
+          <span class="logo-text">Loberiam Shop</span>
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="conta.html" class="header-icon-link" title="Minha Conta">
+          <i class="fas fa-user-circle"></i>
+          <span>Minha Conta</span>
+        </a>
+        <a href="#" class="header-icon-link" title="Lista de Desejos">
+          <i class="fas fa-heart"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="header-icon-link cart-icon" title="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carrinho</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="produtos.html">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Eletrônicos</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Casa & Jardim</a></li>
+              <li><a href="#">Beleza</a></li>
+              <li><a href="#">Esportes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Brinquedos</a></li>
+            </ul>
+          </li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#">Mais Vendidos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-promo-link"><i class="fas fa-mobile-alt"></i> Baixe o App e Ganhe Descontos!</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-content page-politicas">
+    <section class="page-title-section">
+      <h1>Políticas da Loberiam Shop</h1>
+      <p class="subtitle">Conheça nossas políticas e termos para uma experiência de compra transparente e segura.</p>
+    </section>
+
+    <div class="politicas-tabs">
+      <button class="politica-tab active" data-target="termos-uso">Termos de Uso</button>
+      <button class="politica-tab" data-target="privacidade">Política de Privacidade</button>
+      <button class="politica-tab" data-target="trocas">Política de Trocas e Devoluções</button>
+      <button class="politica-tab" data-target="pagamentos">Formas de Pagamento</button>
+      <button class="politica-tab" data-target="entrega">Política de Entrega</button>
+    </div>
+
+    <div class="politicas-container">
+      <!-- Termos de Uso -->
+      <div id="termos-uso" class="politica-content active">
+        <h2>Termos de Uso</h2>
+        <p>Última atualização: 22 de Maio de 2025</p>
+
+        <h3>1. Aceitação dos Termos</h3>
+        <p>Ao acessar e utilizar o site da Loberiam Shop, você concorda com os termos e condições descritos neste documento. Se você não concordar com qualquer parte destes termos, por favor, não utilize nosso site ou serviços.</p>
+
+        <h3>2. Cadastro e Conta</h3>
+        <p>Para realizar compras em nossa plataforma, é necessário criar uma conta. Você é responsável por manter a confidencialidade de suas informações de login e por todas as atividades que ocorrerem em sua conta. A Loberiam Shop não será responsável por quaisquer perdas ou danos decorrentes do uso não autorizado de sua conta.</p>
+
+        <h3>3. Uso do Site</h3>
+        <p>Ao utilizar nosso site, você concorda em:</p>
+        <ul>
+          <li>Não violar quaisquer leis aplicáveis;</li>
+          <li>Não utilizar o site para fins ilegais ou não autorizados;</li>
+          <li>Não interferir ou interromper o funcionamento do site;</li>
+          <li>Não coletar informações pessoais de outros usuários;</li>
+          <li>Não utilizar técnicas de engenharia reversa no site ou em seus componentes.</li>
+        </ul>
+
+        <h3>4. Produtos e Preços</h3>
+        <p>A Loberiam Shop se esforça para fornecer informações precisas sobre produtos e preços. No entanto, erros podem ocorrer. Reservamo-nos o direito de recusar ou cancelar qualquer pedido baseado em erros de preço ou descrição de produto. Se seu cartão de crédito já tiver sido cobrado e seu pedido for cancelado, emitiremos um reembolso no valor total.</p>
+
+        <h3>5. Propriedade Intelectual</h3>
+        <p>Todo o conteúdo do site da Loberiam Shop, incluindo textos, gráficos, logos, ícones, imagens, clipes de áudio, downloads digitais e compilações de dados, é propriedade da Loberiam Shop ou de seus fornecedores de conteúdo e está protegido por leis de direitos autorais nacionais e internacionais.</p>
+
+        <h3>6. Links para Sites de Terceiros</h3>
+        <p>Nosso site pode conter links para sites de terceiros. A Loberiam Shop não é responsável pelo conteúdo ou práticas de privacidade desses sites. Recomendamos que você leia os termos de uso e políticas de privacidade de qualquer site que visitar.</p>
+
+        <h3>7. Limitação de Responsabilidade</h3>
+        <p>A Loberiam Shop não será responsável por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos resultantes do uso ou incapacidade de usar nossos serviços, mesmo que tenhamos sido informados da possibilidade de tais danos.</p>
+
+        <h3>8. Alterações nos Termos</h3>
+        <p>Reservamo-nos o direito de modificar estes termos a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no site. É sua responsabilidade verificar periodicamente se houve alterações.</p>
+
+        <h3>9. Lei Aplicável</h3>
+        <p>Estes termos serão regidos e interpretados de acordo com as leis do Brasil. Qualquer disputa relacionada a estes termos será submetida à jurisdição exclusiva dos tribunais brasileiros.</p>
+
+        <h3>10. Contato</h3>
+        <p>Se você tiver alguma dúvida sobre estes Termos de Uso, entre em contato conosco pelo e-mail: <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a>.</p>
+      </div>
+
+      <!-- Política de Privacidade -->
+      <div id="privacidade" class="politica-content">
+        <h2>Política de Privacidade</h2>
+        <p>Última atualização: 22 de Maio de 2025</p>
+
+        <h3>1. Introdução</h3>
+        <p>A Loberiam Shop valoriza a privacidade de seus usuários e está comprometida em proteger suas informações pessoais. Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos suas informações quando você utiliza nosso site e serviços.</p>
+
+        <h3>2. Informações que Coletamos</h3>
+        <p>Podemos coletar os seguintes tipos de informações:</p>
+        <ul>
+          <li><strong>Informações de Cadastro:</strong> Nome, endereço de e-mail, endereço postal, número de telefone, data de nascimento e CPF/CNPJ.</li>
+          <li><strong>Informações de Pagamento:</strong> Dados de cartão de crédito (que são processados de forma segura por nossos parceiros de pagamento) e histórico de compras.</li>
+          <li><strong>Informações de Uso:</strong> Como você interage com nosso site, incluindo páginas visitadas, produtos visualizados e tempo gasto no site.</li>
+          <li><strong>Informações do Dispositivo:</strong> Tipo de dispositivo, sistema operacional, tipo de navegador e endereço IP.</li>
+        </ul>
+
+        <h3>3. Como Usamos Suas Informações</h3>
+        <p>Utilizamos suas informações para:</p>
+        <ul>
+          <li>Processar e entregar seus pedidos;</li>
+          <li>Gerenciar sua conta e fornecer suporte ao cliente;</li>
+          <li>Personalizar sua experiência de compra;</li>
+          <li>Enviar comunicações de marketing (com seu consentimento);</li>
+          <li>Melhorar nosso site e serviços;</li>
+          <li>Prevenir fraudes e atividades ilegais;</li>
+          <li>Cumprir obrigações legais.</li>
+        </ul>
+
+        <h3>4. Compartilhamento de Informações</h3>
+        <p>Podemos compartilhar suas informações com:</p>
+        <ul>
+          <li><strong>Parceiros de Serviço:</strong> Empresas que nos ajudam a operar nosso site e fornecer serviços (processamento de pagamentos, entrega, atendimento ao cliente).</li>
+          <li><strong>Vendedores Parceiros:</strong> Quando você compra produtos de vendedores parceiros em nossa plataforma.</li>
+          <li><strong>Autoridades Legais:</strong> Quando exigido por lei ou para proteger nossos direitos legais.</li>
+        </ul>
+        <p>Não vendemos suas informações pessoais a terceiros.</p>
+
+        <h3>5. Cookies e Tecnologias Semelhantes</h3>
+        <p>Utilizamos cookies e tecnologias semelhantes para melhorar sua experiência, analisar o tráfego do site e personalizar o conteúdo. Você pode controlar o uso de cookies através das configurações do seu navegador.</p>
+
+        <h3>6. Segurança de Dados</h3>
+        <p>Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro.</p>
+
+        <h3>7. Seus Direitos</h3>
+        <p>De acordo com as leis de proteção de dados aplicáveis, você pode ter os seguintes direitos:</p>
+        <ul>
+          <li>Acessar e receber uma cópia de suas informações pessoais;</li>
+          <li>Retificar informações incorretas ou incompletas;</li>
+          <li>Solicitar a exclusão de suas informações pessoais;</li>
+          <li>Restringir ou opor-se ao processamento de suas informações;</li>
+          <li>Retirar seu consentimento a qualquer momento;</li>
+          <li>Apresentar uma reclamação a uma autoridade de proteção de dados.</li>
+        </ul>
+
+        <h3>8. Retenção de Dados</h3>
+        <p>Mantemos suas informações pessoais pelo tempo necessário para cumprir os propósitos descritos nesta política, a menos que um período de retenção mais longo seja exigido ou permitido por lei.</p>
+
+        <h3>9. Alterações nesta Política</h3>
+        <p>Podemos atualizar esta Política de Privacidade periodicamente. A versão mais recente estará sempre disponível em nosso site, com a data da última atualização.</p>
+
+        <h3>10. Contato</h3>
+        <p>Se você tiver dúvidas ou preocupações sobre nossa Política de Privacidade ou práticas de dados, entre em contato conosco pelo e-mail: <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a>.</p>
+      </div>
+
+      <!-- Política de Trocas e Devoluções -->
+      <div id="trocas" class="politica-content">
+        <h2>Política de Trocas e Devoluções</h2>
+        <p>Última atualização: 22 de Maio de 2025</p>
+
+        <h3>1. Direito de Arrependimento</h3>
+        <p>De acordo com o Código de Defesa do Consumidor (Art. 49), você tem o direito de desistir da compra em até 7 (sete) dias corridos após o recebimento do produto, independentemente do motivo.</p>
+
+        <h3>2. Como Solicitar uma Troca ou Devolução</h3>
+        <p>Para solicitar uma troca ou devolução, siga os passos abaixo:</p>
+        <ol>
+          <li>Acesse sua conta na Loberiam Shop;</li>
+          <li>Vá para "Meus Pedidos" e selecione o pedido em questão;</li>
+          <li>Clique em "Solicitar Troca/Devolução";</li>
+          <li>Selecione os produtos que deseja trocar ou devolver e informe o motivo;</li>
+          <li>Siga as instruções para envio do produto.</li>
+        </ol>
+        <p>Você também pode solicitar através do nosso Atendimento ao Cliente pelo e-mail <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a> ou pelo WhatsApp (XX) XXXXX-XXXX.</p>
+
+        <h3>3. Condições para Troca e Devolução</h3>
+        <p>Para que a troca ou devolução seja aceita, o produto deve:</p>
+        <ul>
+          <li>Estar em sua embalagem original;</li>
+          <li>Estar com todos os acessórios e manuais;</li>
+          <li>Não apresentar sinais de uso;</li>
+          <li>Estar acompanhado da nota fiscal de compra.</li>
+        </ul>
+
+        <h3>4. Produtos com Defeito</h3>
+        <p>Se você receber um produto com defeito, entre em contato conosco em até 30 dias após o recebimento. Após a análise do problema, poderemos:</p>
+        <ul>
+          <li>Trocar o produto por um novo;</li>
+          <li>Oferecer reparo, quando aplicável;</li>
+          <li>Realizar o reembolso integral.</li>
+        </ul>
+
+        <h3>5. Prazos</h3>
+        <p><strong>Para devolução por arrependimento:</strong> 7 dias corridos após o recebimento.</p>
+        <p><strong>Para produtos com defeito:</strong> 30 dias para produtos não duráveis e 90 dias para produtos duráveis, conforme o Código de Defesa do Consumidor.</p>
+        <p><strong>Prazo para análise da solicitação:</strong> Até 5 dias úteis após o recebimento do produto em nosso centro de distribuição.</p>
+        <p><strong>Prazo para reembolso:</strong> Até 10 dias úteis após a aprovação da devolução.</p>
+
+        <h3>6. Custos de Envio</h3>
+        <p><strong>Devolução por arrependimento:</strong> A Loberiam Shop arcará com os custos de envio.</p>
+        <p><strong>Produtos com defeito:</strong> A Loberiam Shop arcará com os custos de envio.</p>
+        <p><strong>Troca por escolha do cliente (tamanho, cor, etc.):</strong> O cliente é responsável pelos custos de envio, exceto em casos de promoções específicas.</p>
+
+        <h3>7. Reembolso</h3>
+        <p>O reembolso será realizado na mesma forma de pagamento utilizada na compra:</p>
+        <ul>
+          <li><strong>Cartão de crédito:</strong> O estorno aparecerá em até duas faturas subsequentes, dependendo da data de fechamento.</li>
+          <li><strong>Boleto bancário ou PIX:</strong> O valor será devolvido via transferência bancária para a conta informada pelo cliente.</li>
+        </ul>
+
+        <h3>8. Produtos não elegíveis para troca ou devolução</h3>
+        <p>Alguns produtos não são elegíveis para troca ou devolução por motivos de higiene e segurança, como:</p>
+        <ul>
+          <li>Produtos de uso íntimo;</li>
+          <li>Cosméticos e perfumes com embalagem aberta;</li>
+          <li>Alimentos e bebidas;</li>
+          <li>Software ou conteúdo digital que tenha sido acessado ou baixado.</li>
+        </ul>
+
+        <h3>9. Casos Especiais</h3>
+        <p>Para produtos personalizados, perecíveis ou que foram fabricados sob encomenda, condições especiais podem ser aplicadas. Consulte as informações específicas na página do produto.</p>
+
+        <h3>10. Contato</h3>
+        <p>Em caso de dúvidas sobre nossa política de trocas e devoluções, entre em contato com nosso Atendimento ao Cliente pelo e-mail <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a>.</p>
+      </div>
+
+      <!-- Formas de Pagamento -->
+      <div id="pagamentos" class="politica-content">
+        <h2>Formas de Pagamento</h2>
+        <p>Última atualização: 22 de Maio de 2025</p>
+
+        <h3>1. Opções de Pagamento Disponíveis</h3>
+        <p>A Loberiam Shop oferece diversas formas de pagamento para sua comodidade:</p>
+        
+        <h4>1.1. Cartões de Crédito</h4>
+        <p>Aceitamos as principais bandeiras:</p>
+        <ul>
+          <li>Visa</li>
+          <li>Mastercard</li>
+          <li>American Express</li>
+          <li>Elo</li>
+          <li>Hipercard</li>
+        </ul>
+        <p>Parcelamento em até 12x sem juros, dependendo do valor da compra:</p>
+        <ul>
+          <li>Compras até R$ 100,00: até 3x sem juros</li>
+          <li>Compras de R$ 100,01 a R$ 300,00: até 6x sem juros</li>
+          <li>Compras de R$ 300,01 a R$ 600,00: até 10x sem juros</li>
+          <li>Compras acima de R$ 600,01: até 12x sem juros</li>
+        </ul>
+
+        <h4>1.2. Boleto Bancário</h4>
+        <p>O pagamento via boleto bancário é à vista e oferece 5% de desconto sobre o valor total da compra.</p>
+        <p>Importante: O boleto tem validade de 2 dias úteis. Após esse prazo, o pedido será automaticamente cancelado.</p>
+        <p>O prazo para compensação do boleto é de até 3 dias úteis. Seu pedido só será processado após a confirmação do pagamento.</p>
+
+        <h4>1.3. PIX</h4>
+        <p>Pagamento instantâneo com 10% de desconto sobre o valor total da compra.</p>
+        <p>O código PIX tem validade de 30 minutos. Após a confirmação do pagamento, seu pedido será processado imediatamente.</p>
+
+        <h4>1.4. Cartão de Débito Virtual</h4>
+        <p>Aceitamos pagamentos via cartão de débito virtual das principais bandeiras.</p>
+
+        <h3>2. Segurança nas Transações</h3>
+        <p>Todas as transações na Loberiam Shop são protegidas por tecnologia de criptografia SSL (Secure Socket Layer), garantindo que suas informações financeiras sejam transmitidas de forma segura.</p>
+        <p>Não armazenamos dados completos de cartões de crédito em nossos servidores. O processamento dos pagamentos é realizado por gateways de pagamento certificados e em conformidade com os padrões PCI DSS.</p>
+
+        <h3>3. Confirmação de Pagamento</h3>
+        <p>Após a finalização da compra, você receberá um e-mail de confirmação do pedido. Um segundo e-mail será enviado assim que o pagamento for confirmado.</p>
+        <p>Você também pode acompanhar o status do seu pagamento na seção "Meus Pedidos" da sua conta.</p>
+
+        <h3>4. Nota Fiscal</h3>
+        <p>A Nota Fiscal será emitida após a confirmação do pagamento e enviada para o e-mail cadastrado. Uma cópia da Nota Fiscal também acompanhará o produto.</p>
+
+        <h3>5. Alteração da Forma de Pagamento</h3>
+        <p>Caso deseje alterar a forma de pagamento após a finalização do pedido, entre em contato com nosso Atendimento ao Cliente em até 1 hora após a compra.</p>
+
+        <h3>6. Problemas com Pagamento</h3>
+        <p>Se você encontrar qualquer problema ao realizar o pagamento, entre em contato com nosso Atendimento ao Cliente pelo e-mail <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a> ou pelo WhatsApp (XX) XXXXX-XXXX.</p>
+
+        <h3>7. Contato</h3>
+        <p>Para mais informações sobre formas de pagamento, entre em contato com nosso Atendimento ao Cliente pelo e-mail <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a>.</p>
+      </div>
+
+      <!-- Política de Entrega -->
+      <div id="entrega" class="politica-content">
+        <h2>Política de Entrega</h2>
+        <p>Última atualização: 22 de Maio de 2025</p>
+
+        <h3>1. Prazos de Entrega</h3>
+        <p>Os prazos de entrega variam de acordo com a localidade e a modalidade de frete escolhida. O prazo é calculado em dias úteis a partir da confirmação do pagamento.</p>
+        <p>Você pode consultar o prazo estimado de entrega informando seu CEP na página do produto ou no carrinho de compras.</p>
+
+        <h3>2. Modalidades de Frete</h3>
+        <p>Oferecemos as seguintes opções de entrega:</p>
+        
+        <h4>2.1. Frete Padrão</h4>
+        <p>Entrega realizada pelos Correios ou transportadoras parceiras.</p>
+        <p>Prazo médio: 3 a 15 dias úteis, dependendo da região.</p>
+
+        <h4>2.2. Frete Expresso</h4>
+        <p>Entrega mais rápida, disponível para algumas regiões.</p>
+        <p>Prazo médio: 1 a 5 dias úteis.</p>
+
+        <h4>2.3. Frete Grátis</h4>
+        <p>Disponível para compras acima de R$ 199,00 ou em promoções específicas.</p>
+        <p>Aplicável apenas para o Frete Padrão.</p>
+
+        <h3>3. Áreas de Entrega</h3>
+        <p>Realizamos entregas em todo o território nacional. No entanto, algumas localidades remotas podem ter prazos estendidos ou restrições.</p>
+        <p>Para entregas internacionais, entre em contato com nosso Atendimento ao Cliente para verificar disponibilidade e condições.</p>
+
+        <h3>4. Rastreamento</h3>
+        <p>Todas as entregas possuem código de rastreamento, que será enviado por e-mail após o despacho do pedido.</p>
+        <p>Você também pode acompanhar o status da entrega na seção "Meus Pedidos" da sua conta.</p>
+
+        <h3>5. Recebimento da Entrega</h3>
+        <p>No momento da entrega:</p>
+        <ul>
+          <li>Verifique se a embalagem está íntegra e sem sinais de violação;</li>
+          <li>Confira se o produto corresponde ao pedido realizado;</li>
+          <li>Em caso de qualquer irregularidade, recuse o recebimento e entre em contato imediatamente com nosso Atendimento ao Cliente.</li>
+        </ul>
+
+        <h3>6. Ausência no Momento da Entrega</h3>
+        <p>Caso não haja ninguém para receber o pedido no endereço informado:</p>
+        <ul>
+          <li><strong>Correios:</strong> Serão realizadas até 3 tentativas de entrega. Após a terceira tentativa, o pacote ficará disponível para retirada na agência dos Correios mais próxima por até 7 dias.</li>
+          <li><strong>Transportadoras:</strong> As políticas podem variar. Geralmente, são realizadas até 2 tentativas de entrega, e depois o cliente deve entrar em contato para agendar nova entrega.</li>
+        </ul>
+
+        <h3>7. Alteração de Endereço</h3>
+        <p>A alteração de endereço de entrega só é possível se o pedido ainda não tiver sido despachado. Para solicitar a alteração, entre em contato com nosso Atendimento ao Cliente imediatamente após a compra.</p>
+
+        <h3>8. Atrasos na Entrega</h3>
+        <p>Em caso de atraso na entrega além do prazo informado, entre em contato com nosso Atendimento ao Cliente, informando o número do pedido e o código de rastreamento.</p>
+
+        <h3>9. Frete para Trocas e Devoluções</h3>
+        <p>Para informações sobre frete em casos de troca ou devolução, consulte nossa Política de Trocas e Devoluções.</p>
+
+        <h3>10. Contato</h3>
+        <p>Para mais informações sobre entregas, entre em contato com nosso Atendimento ao Cliente pelo e-mail <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a> ou pelo WhatsApp (XX) XXXXX-XXXX.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-column footer-about">
+        <h4>Loberiam Shop</h4>
+        <p>Sua loja online completa. Compra inteligente com comodidade, segurança e a maior variedade de produtos para você.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="politicas.html">Termos de Uso</a></li>
+          <li><a href="politicas.html#privacidade">Política de Privacidade</a></li>
+          <li><a href="politicas.html#trocas">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Ajuda e Suporte</h4>
+        <ul>
+          <li><a href="ajuda.html">Perguntas Frequentes (FAQ)</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Minha Conta</h4>
+        <ul>
+          <li><a href="conta.html">Entrar / Cadastrar</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Minha Lista de Desejos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Atendimento</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="#">(XX) XXXXX-XXXX</a></p>
+        <p>Segunda à Sexta: 08h às 18h</p>
+      </div>
+    </div>
+    <div class="footer-payment-methods">
+        <h4>Formas de Pagamento</h4>
+        <img src="assets/payment_methods.png" alt="Formas de Pagamento">
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Loberiam Shop — Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+      <p>Loberiam Shop LTDA - Rua Exemplo Fictício, 123, Cidade Exemplo, UF - CEP: 00000-000</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="funcionalidades.js"></script>
+  <script>
+    // Script para as abas de políticas
+    document.addEventListener('DOMContentLoaded', function() {
+      const politicaTabs = document.querySelectorAll('.politica-tab');
+      const politicaContents = document.querySelectorAll('.politica-content');
+      
+      politicaTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remover classe active de todas as abas
+          politicaTabs.forEach(t => t.classList.remove('active'));
+          // Adicionar classe active à aba clicada
+          this.classList.add('active');
+          
+          // Mostrar conteúdo correspondente
+          const target = this.dataset.target;
+          politicaContents.forEach(content => {
+            content.classList.remove('active');
+            if (content.id === target) {
+              content.classList.add('active');
+            }
+          });
+          
+          // Atualizar URL com hash
+          window.location.hash = target;
+        });
+      });
+      
+      // Verificar se há hash na URL
+      if (window.location.hash) {
+        const hash = window.location.hash.substring(1);
+        const tab = document.querySelector(`.politica-tab[data-target="${hash}"]`);
+        if (tab) {
+          tab.click();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

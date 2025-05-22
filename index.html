@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loberiam Shop - Seu E-commerce Completo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="topo">
+    <!-- Barra de anúncios superior -->
+    <div class="top-announcement-bar">
+      <div class="container">
+        <div class="announcement-slider">
+          <div class="announcement-slide active">
+            <i class="fas fa-truck"></i> Frete grátis para compras acima de R$ 199
+          </div>
+          <div class="announcement-slide">
+            <i class="fas fa-credit-card"></i> Até 12x sem juros no cartão
+          </div>
+          <div class="announcement-slide">
+            <i class="fas fa-percent"></i> 10% OFF na primeira compra com o cupom BEMVINDO10
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container topo-flex">
+      <div class="logo-container">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo-loberiam.png" alt="Loberiam Shop" class="logo" />
+          <span class="logo-text">Loberiam Shop</span>
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-icons">
+        <a href="conta.html" class="header-icon-link" title="Minha Conta">
+          <i class="fas fa-user-circle"></i>
+          <span>Minha Conta</span>
+        </a>
+        <a href="#" class="header-icon-link" title="Lista de Desejos">
+          <i class="fas fa-heart"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="header-icon-link cart-icon" title="Carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Carrinho</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <a href="produtos.html">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Eletrônicos</a></li>
+              <li><a href="#">Moda</a></li>
+              <li><a href="#">Casa & Jardim</a></li>
+              <li><a href="#">Beleza</a></li>
+              <li><a href="#">Esportes</a></li>
+              <li><a href="#">Livros</a></li>
+              <li><a href="#">Brinquedos</a></li>
+            </ul>
+          </li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#">Mais Vendidos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="nav-promo-link"><i class="fas fa-mobile-alt"></i> Baixe o App e Ganhe Descontos!</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-content">
+    <!-- Seção de Benefícios Rápidos -->
+    <div class="quick-benefits">
+      <div class="benefit-item">
+        <i class="fas fa-truck"></i> Frete Grátis
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-shield-alt"></i> Compra Segura
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-undo"></i> Troca Fácil
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-credit-card"></i> Até 12x s/ juros
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Bem-vindo à Loberiam Shop</h1>
+        <p>Os melhores produtos, de diversos fornecedores, em um só lugar. Qualidade, variedade e segurança para sua compra online!</p>
+        <a href="produtos.html" class="btn btn-primary">Ver Todos os Produtos</a>
+      </div>
+      <img src="assets/produtos-iniciais.png" alt="Produtos diversos" class="hero-image" />
+    </section>
+
+    <section class="carousel">
+      <div class="carousel-container">
+        <div class="slide active">
+          <img src="assets/banner1.jpg" alt="Promoção 1">
+          <div class="slide-text">
+            <h3>Super Ofertas da Semana</h3>
+            <p>Descontos incríveis em todas as categorias!</p>
+            <a href="#ofertas" class="btn">Ver Ofertas</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/banner2.jpg" alt="Novidades">
+          <div class="slide-text">
+            <h3>Novidades em Tecnologia</h3>
+            <p>Os últimos lançamentos você encontra aqui.</p>
+            <a href="#" class="btn">Comprar Agora</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/banner3.jpg" alt="Descontos">
+          <div class="slide-text">
+            <h3>Descontos de até 50%</h3>
+            <p>Aproveite para economizar em seus produtos favoritos.</p>
+            <a href="#" class="btn">Aproveitar</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control prev">&#10094;</button>
+      <button class="carousel-control next">&#10095;</button>
+      <div class="carousel-indicators"></div>
+    </section>
+    
+    <!-- Seção de Ofertas com Contagem Regressiva -->
+    <section id="ofertas" class="product-section">
+      <div class="section-header">
+        <h2 class="section-title">Ofertas Imperdíveis</h2>
+        <div class="countdown-container">
+          <span class="countdown-label">Termina em:</span>
+          <div class="countdown-timer">
+            <div class="countdown-item">
+              <span class="countdown-value">01</span>
+              <span class="countdown-unit">dias</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value">12</span>
+              <span class="countdown-unit">hrs</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value">45</span>
+              <span class="countdown-unit">min</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value">22</span>
+              <span class="countdown-unit">seg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="products products-grid">
+        <!-- Exemplo de card de produto em oferta -->
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/tv.png" alt="Televisivo" class="product-image"/>
+              <span class="discount-badge">-15%</span>
+              <span class="free-shipping-badge"><i class="fas fa-truck"></i> Frete Grátis</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Televisivo Ultra HD 4K</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span class="rating-count">(88)</span>
+              </div>
+              <p class="product-price"><span class="old-price">R$ 2.700,00</span> R$ 2.300,00</p>
+              <p class="product-installments">ou 10x de R$ 230,00 sem juros</p>
+              <div class="product-seller">
+                <img src="assets/seller-badge.png" alt="Vendedor Oficial" class="seller-badge">
+                <span class="seller-name">Vendido por: <strong>Loberiam Oficial</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Comprar Agora</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        <!-- Repetir cards para outros produtos em oferta -->
+         <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/smartwatch.png" alt="Smartwatch Advanced" class="product-image"/>
+               <span class="discount-badge">-10%</span>
+               <span class="bestseller-badge">Mais Vendido</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Smartwatch Advanced Fit</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <span class="rating-count">(102)</span>
+              </div>
+              <p class="product-price"><span class="old-price">R$ 330,00</span> R$ 300,00</p>
+               <p class="product-installments">ou 6x de R$ 50,00 sem juros</p>
+               <div class="product-seller">
+                <span class="seller-rating"><i class="fas fa-medal"></i> Vendedor Platinum</span>
+                <span class="seller-name">Vendido por: <strong>TechStore</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Comprar Agora</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        
+        <!-- Novo produto -->
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/eletronicos.png" alt="Fone de Ouvido" class="product-image"/>
+              <span class="discount-badge">-20%</span>
+              <span class="free-shipping-badge"><i class="fas fa-truck"></i> Frete Grátis</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Fone de Ouvido Bluetooth Premium</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="rating-count">(156)</span>
+              </div>
+              <p class="product-price"><span class="old-price">R$ 250,00</span> R$ 199,90</p>
+              <p class="product-installments">ou 5x de R$ 39,98 sem juros</p>
+              <div class="product-seller">
+                <img src="assets/seller-badge.png" alt="Vendedor Oficial" class="seller-badge">
+                <span class="seller-name">Vendido por: <strong>AudioTech</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Comprar Agora</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        
+        <!-- Novo produto -->
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/lampanlar.png" alt="Lâmpada Inteligente" class="product-image"/>
+              <span class="discount-badge">-15%</span>
+              <span class="limited-badge">Últimas Unidades</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Lâmpada Inteligente RGB</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span class="rating-count">(78)</span>
+              </div>
+              <p class="product-price"><span class="old-price">R$ 120,00</span> R$ 99,90</p>
+              <p class="product-installments">ou 3x de R$ 33,30 sem juros</p>
+              <div class="product-seller">
+                <span class="seller-rating"><i class="fas fa-medal"></i> Vendedor Gold</span>
+                <span class="seller-name">Vendido por: <strong>SmartHome</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Comprar Agora</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-more-container">
+        <a href="#" class="btn btn-outline-primary">Ver Todas as Ofertas <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Filtros e Categorias -->
+    <section id="categorias-destaque" class="category-section">
+      <h2 class="section-title">Navegue por Categorias</h2>
+      
+      <div class="category-filters">
+        <div class="filter-group">
+          <span class="filter-label">Ordenar por:</span>
+          <select class="filter-select">
+            <option value="relevancia">Relevância</option>
+            <option value="menor-preco">Menor Preço</option>
+            <option value="maior-preco">Maior Preço</option>
+            <option value="mais-vendidos">Mais Vendidos</option>
+            <option value="avaliacao">Melhor Avaliação</option>
+          </select>
+        </div>
+        
+        <div class="filter-tags">
+          <span class="filter-tag active">Todos</span>
+          <span class="filter-tag">Promoções</span>
+          <span class="filter-tag">Frete Grátis</span>
+          <span class="filter-tag">Lançamentos</span>
+        </div>
+      </div>
+      
+      <div class="categorias-grid">
+        <a href="#" class="categoria-card">
+          <img src="assets/eletronicos.png" alt="Eletrônicos">
+          <span>Eletrônicos</span>
+          <span class="category-count">1.245 produtos</span>
+        </a>
+        <a href="#" class="categoria-card">
+          <img src="assets/moda.png" alt="Moda">
+          <span>Moda</span>
+          <span class="category-count">3.782 produtos</span>
+        </a>
+         <a href="#" class="categoria-card">
+          <img src="assets/casa_jardim.png" alt="Casa & Jardim">
+          <span>Casa & Jardim</span>
+          <span class="category-count">2.156 produtos</span>
+        </a>
+         <a href="#" class="categoria-card">
+          <img src="assets/beleza.png" alt="Beleza">
+          <span>Beleza</span>
+          <span class="category-count">1.879 produtos</span>
+        </a>
+         <a href="#" class="categoria-card">
+          <img src="assets/esportes.png" alt="Esportes">
+          <span>Esportes</span>
+          <span class="category-count">945 produtos</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Produtos em Destaque com Filtros -->
+    <section id="produtos-destaque">
+      <div class="section-header">
+        <h2 class="section-title">Produtos em Destaque</h2>
+        <div class="product-tabs">
+          <button class="product-tab active">Todos</button>
+          <button class="product-tab">Recém-chegados</button>
+          <button class="product-tab">Mais Vendidos</button>
+          <button class="product-tab">Melhor Avaliados</button>
+        </div>
+      </div>
+      
+      <div class="products products-grid">
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/puncia-dac.png" alt="Punxia dac" class="product-image"/>
+              <span class="free-shipping-badge"><i class="fas fa-truck"></i> Frete Grátis</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Punxia DAC Hi-Fi</h4>
+               <div class="product-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span class="rating-count">(45)</span>
+                </div>
+              <p class="product-price">R$ 155,00</p>
+              <p class="product-installments">ou 4x de R$ 38,75 sem juros</p>
+              <div class="product-seller">
+                <span class="seller-rating"><i class="fas fa-medal"></i> Vendedor Gold</span>
+                <span class="seller-name">Vendido por: <strong>AudioPro</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+              <button class="btn btn-secondary btn-block">Comprar Agora</button>
+              <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/lampanlar.png" alt="Lâmpada Inteligente" class="product-image"/>
+              <span class="bestseller-badge">Mais Vendido</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Lâmpada Inteligente LED</h4>
+              <div class="product-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span class="rating-count">(67)</span>
+                </div>
+              <p class="product-price">R$ 120,00</p>
+              <p class="product-installments">ou 3x de R$ 40,00 sem juros</p>
+              <div class="product-seller">
+                <img src="assets/seller-badge.png" alt="Vendedor Oficial" class="seller-badge">
+                <span class="seller-name">Vendido por: <strong>Loberiam Oficial</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+              <button class="btn btn-secondary btn-block">Comprar Agora</button>
+              <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        
+        <!-- Novo produto -->
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/moda.png" alt="Tênis Esportivo" class="product-image"/>
+              <span class="new-badge">Novo</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Tênis Esportivo Ultra Conforto</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="rating-count">(23)</span>
+              </div>
+              <p class="product-price">R$ 249,90</p>
+              <p class="product-installments">ou 6x de R$ 41,65 sem juros</p>
+              <div class="product-seller">
+                <span class="seller-rating"><i class="fas fa-medal"></i> Vendedor Silver</span>
+                <span class="seller-name">Vendido por: <strong>SportFashion</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Comprar Agora</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+        
+        <!-- Novo produto -->
+        <div class="card product-card">
+          <a href="produto_exemplo.html" class="product-link">
+            <div class="product-image-container">
+              <img src="assets/tv.png" alt="Smart TV" class="product-image"/>
+              <span class="free-shipping-badge"><i class="fas fa-truck"></i> Frete Grátis</span>
+              <span class="installment-badge">12x sem juros</span>
+            </div>
+            <div class="product-info">
+              <h4 class="product-name">Smart TV 50" 4K UHD</h4>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span class="rating-count">(112)</span>
+              </div>
+              <p class="product-price">R$ 2.799,00</p>
+              <p class="product-installments">ou 12x de R$ 233,25 sem juros</p>
+              <div class="product-seller">
+                <img src="assets/seller-badge.png" alt="Vendedor Oficial" class="seller-badge">
+                <span class="seller-name">Vendido por: <strong>Loberiam Oficial</strong></span>
+              </div>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-secondary btn-block">Comprar Agora</button>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-more-container">
+        <a href="#" class="btn btn-outline-primary">Ver Mais Produtos <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Banner de Live Commerce Aprimorado -->
+    <section class="live-commerce-banner">
+        <div class="live-text">
+            <div class="live-badge">
+              <i class="fas fa-circle live-indicator"></i> AO VIVO AGORA
+            </div>
+            <h3><i class="fas fa-video"></i> Loberiam Live!</h3>
+            <p>Participe das nossas lives de compras com ofertas exclusivas e demonstrações de produtos ao vivo! Fique de olho em nossas redes sociais.</p>
+            <div class="live-info">
+              <div class="live-viewers">
+                <i class="fas fa-user"></i> 1.245 assistindo agora
+              </div>
+              <div class="live-schedule">
+                <i class="fas fa-calendar-alt"></i> Próxima: Hoje às 19h
+              </div>
+            </div>
+            <div class="live-actions">
+              <a href="#" class="btn btn-primary">Assistir Agora</a>
+              <a href="#" class="btn btn-outline">Ver Programação</a>
+            </div>
+        </div>
+        <div class="live-preview">
+          <img src="assets/live_banner_mock.png" alt="Live Commerce Loberiam">
+          <div class="live-play-button">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vendedores em Destaque -->
+    <section class="featured-sellers">
+      <h2 class="section-title">Vendedores em Destaque</h2>
+      <div class="sellers-grid">
+        <div class="seller-card">
+          <div class="seller-header">
+            <img src="assets/seller-badge.png" alt="Loberiam Oficial" class="seller-logo">
+            <div class="seller-info">
+              <h4>Loberiam Oficial</h4>
+              <div class="seller-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(4.9/5)</span>
+              </div>
+            </div>
+          </div>
+          <div class="seller-metrics">
+            <div class="metric">
+              <span class="metric-value">99%</span>
+              <span class="metric-label">Avaliações Positivas</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">1.2k+</span>
+              <span class="metric-label">Vendas Realizadas</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">24h</span>
+              <span class="metric-label">Tempo de Resposta</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline-secondary btn-sm">Ver Produtos</a>
+        </div>
+        
+        <div class="seller-card">
+          <div class="seller-header">
+            <div class="seller-avatar">TP</div>
+            <div class="seller-info">
+              <h4>TechPro</h4>
+              <div class="seller-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span>(4.7/5)</span>
+              </div>
+            </div>
+          </div>
+          <div class="seller-metrics">
+            <div class="metric">
+              <span class="metric-value">98%</span>
+              <span class="metric-label">Avaliações Positivas</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">850+</span>
+              <span class="metric-label">Vendas Realizadas</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">48h</span>
+              <span class="metric-label">Tempo de Resposta</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline-secondary btn-sm">Ver Produtos</a>
+        </div>
+        
+        <div class="seller-card">
+          <div class="seller-header">
+            <div class="seller-avatar">SM</div>
+            <div class="seller-info">
+              <h4>SmartHome</h4>
+              <div class="seller-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span>(4.2/5)</span>
+              </div>
+            </div>
+          </div>
+          <div class="seller-metrics">
+            <div class="metric">
+              <span class="metric-value">95%</span>
+              <span class="metric-label">Avaliações Positivas</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">560+</span>
+              <span class="metric-label">Vendas Realizadas</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">24h</span>
+              <span class="metric-label">Tempo de Resposta</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline-secondary btn-sm">Ver Produtos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Benefícios Aprimorada -->
+    <section class="info-banner-v2">
+      <div class="info-item">
+        <i class="fas fa-shield-alt"></i>
+        <h4>Compra 100% Segura</h4>
+        <p>Seus dados protegidos do início ao fim com criptografia avançada.</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-box-open"></i>
+        <h4>Entrega Garantida</h4>
+        <p>Receba seus produtos no conforto da sua casa ou retire em uma loja próxima.</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-headset"></i>
+        <h4>Atendimento Especializado</h4>
+        <p>Nossa equipe pronta para te ajudar 7 dias por semana, das 8h às 20h.</p>
+      </div>
+       <div class="info-item">
+        <i class="fas fa-undo-alt"></i>
+        <h4>Troca Facilitada</h4>
+        <p>Política de troca simples e rápida em até 7 dias após o recebimento.</p>
+      </div>
+    </section>
+
+    <!-- Seção de Aplicativo Mobile -->
+    <section class="app-download-banner">
+      <div class="app-info">
+        <h3>Baixe Nosso Aplicativo</h3>
+        <p>Compre pelo celular com descontos exclusivos, notificações de ofertas e acompanhamento de pedidos em tempo real.</p>
+        <div class="app-benefits">
+          <div class="app-benefit">
+            <i class="fas fa-tag"></i> Cupons exclusivos
+          </div>
+          <div class="app-benefit">
+            <i class="fas fa-bell"></i> Alertas de ofertas
+          </div>
+          <div class="app-benefit">
+            <i class="fas fa-truck"></i> Rastreamento em tempo real
+          </div>
+        </div>
+        <div class="app-download-options">
+          <a href="#" class="app-download-button">
+            <img src="assets/google-play-badge.png" alt="Google Play">
+          </a>
+          <a href="#" class="app-download-button">
+            <img src="assets/app-store-badge.png" alt="App Store">
+          </a>
+        </div>
+      </div>
+      <div class="app-qrcode">
+        <img src="assets/app-qrcode.png" alt="QR Code para download">
+        <p>Escaneie para baixar</p>
+      </div>
+    </section>
+
+    <!-- Banner de Vendedor Aprimorado -->
+    <div class="venda-banner">
+      <div class="venda-content">
+        <h3>Quer vender na Loberiam Shop?</h3>
+        <p>Cadastre-se agora e comece a vender na Loberiam Shop! Alcance milhares de clientes em todo o Brasil.</p>
+        <ul class="venda-benefits">
+          <li><i class="fas fa-check-circle"></i> Comissões competitivas</li>
+          <li><i class="fas fa-check-circle"></i> Suporte dedicado para vendedores</li>
+          <li><i class="fas fa-check-circle"></i> Ferramentas de gestão de vendas</li>
+          <li><i class="fas fa-check-circle"></i> Logística integrada</li>
+        </ul>
+      </div>
+      <div class="venda-actions">
+        <a class="btn btn-success" href="#">Quero Vender na Loberiam</a>
+        <a class="btn btn-outline" href="#">Saiba Mais</a>
+      </div>
+    </div>
+    
+    <!-- Seção de Avaliações de Clientes -->
+    <section class="customer-reviews">
+      <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+      <div class="reviews-slider">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">
+              <span>MC</span>
+            </div>
+            <div class="reviewer-info">
+              <h4>Maria C.</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Comprei um smartphone e fiquei impressionada com a rapidez da entrega. O produto chegou em perfeito estado e o preço estava ótimo. Com certeza voltarei a comprar!"</p>
+          <div class="review-product">
+            <img src="assets/eletronicos.png" alt="Smartphone" class="review-product-image">
+            <span>Smartphone XYZ Pro</span>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">
+              <span>JS</span>
+            </div>
+            <div class="reviewer-info">
+              <h4>João S.</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Atendimento excelente! Tive um problema com meu pedido e a equipe resolveu rapidamente. Os produtos são de ótima qualidade e o site é muito fácil de navegar."</p>
+          <div class="review-product">
+            <img src="assets/smartwatch.png" alt="Smartwatch" class="review-product-image">
+            <span>Smartwatch Advanced Fit</span>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">
+              <span>AP</span>
+            </div>
+            <div class="reviewer-info">
+              <h4>Ana P.</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Já fiz várias compras na Loberiam Shop e sempre fico satisfeita. Os preços são competitivos e as promoções são ótimas. Recomendo a todos!"</p>
+          <div class="review-product">
+            <img src="assets/lampanlar.png" alt="Lâmpada Inteligente" class="review-product-image">
+            <span>Lâmpada Inteligente LED</span>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-controls">
+        <button class="review-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="review-control next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-column footer-about">
+        <h4>Loberiam Shop</h4>
+        <p>Sua loja online completa. Compra inteligente com comodidade, segurança e a maior variedade de produtos para você.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="politicas.html">Termos de Uso</a></li>
+          <li><a href="politicas.html#privacidade">Política de Privacidade</a></li>
+          <li><a href="politicas.html#trocas">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Ajuda e Suporte</h4>
+        <ul>
+          <li><a href="ajuda.html">Perguntas Frequentes (FAQ)</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Minha Conta</h4>
+        <ul>
+          <li><a href="conta.html">Entrar / Cadastrar</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Minha Lista de Desejos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Atendimento</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:loberiamshop@gmail.com">loberiamshop@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="#">(XX) XXXXX-XXXX</a></p>
+        <p><i class="fas fa-clock"></i> Segunda à Sexta: 08h às 18h</p>
+        <div class="footer-newsletter">
+          <h5>Receba nossas ofertas</h5>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" class="newsletter-input">
+            <button class="newsletter-button"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-payment-methods">
+        <h4>Formas de Pagamento</h4>
+        <img src="assets/payment_methods.png" alt="Formas de Pagamento">
+    </div>
+    <div class="footer-security">
+      <div class="security-badges">
+        <img src="assets/security-badge-1.png" alt="Site Seguro">
+        <img src="assets/security-badge-2.png" alt="Compra Protegida">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Loberiam Shop — Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+      <p>Loberiam Shop LTDA - Rua Exemplo Fictício, 123, Cidade Exemplo, UF - CEP: 00000-000</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script do Carrossel (com indicadores)
+    const slides = document.querySelectorAll('.slide');
+    const next = document.querySelector('.carousel-control.next');
+    const prev = document.querySelector('.carousel-control.prev');
+    const indicatorsContainer = document.querySelector('.carousel-indicators');
+    let currentIndex = 0;
+    let slideInterval;
+
+    function createIndicators() {
+      slides.forEach((_, i) => {
+        const indicator = document.createElement('button');
+        indicator.classList.add('indicator');
+        if (i === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => {
+          goToSlide(i);
+          resetInterval();
+        });
+        indicatorsContainer.appendChild(indicator);
+      });
+    }
+
+    function updateIndicators() {
+      const indicators = document.querySelectorAll('.indicator');
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function goToSlide(index) {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (index + slides.length) % slides.length;
+      slides[currentIndex].classList.add('active');
+      updateIndicators();
+    }
+
+    function nextSlide() {
+      goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentIndex - 1);
+    }
+
+    function startInterval() {
+       slideInterval = setInterval(nextSlide, 7000); // Aumentado para 7 segundos
+    }
+
+    function resetInterval(){
+        clearInterval(slideInterval);
+        startInterval();
+    }
+
+    if (slides.length > 0) {
+        createIndicators();
+        startInterval();
+
+        if(next) next.addEventListener('click', () => { nextSlide(); resetInterval(); });
+        if(prev) prev.addEventListener('click', () => { prevSlide(); resetInterval(); });
+    }
+
+    // Dropdown Menu
+    document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
+        dropdownToggle.addEventListener('click', event => {
+            if (window.innerWidth < 769) { // Apenas em mobile, ou se quiser sempre
+                 event.preventDefault();
+                 const parentLi = dropdownToggle.parentElement;
+                 parentLi.classList.toggle('active');
+            }
+        });
+    });
+    
+    // Anúncios Rotativos
+    const announcements = document.querySelectorAll('.announcement-slide');
+    let currentAnnouncement = 0;
+    
+    function rotateAnnouncements() {
+      announcements[currentAnnouncement].classList.remove('active');
+      currentAnnouncement = (currentAnnouncement + 1) % announcements.length;
+      announcements[currentAnnouncement].classList.add('active');
+    }
+    
+    if (announcements.length > 1) {
+      setInterval(rotateAnnouncements, 5000);
+    }
+    
+    // Contagem Regressiva
+    function updateCountdown() {
+      // Simulação de contagem regressiva - em produção, usaria datas reais
+      const now = new Date();
+      const countdownValues = document.querySelectorAll('.countdown-value');
+      
+      // Apenas para demonstração - decrementar segundos
+      let seconds = parseInt(countdownValues[3].textContent);
+      seconds--;
+      
+      if (seconds < 0) {
+        seconds = 59;
+        let minutes = parseInt(countdownValues[2].textContent);
+        minutes--;
+        
+        if (minutes < 0) {
+          minutes = 59;
+          let hours = parseInt(countdownValues[1].textContent);
+          hours--;
+          
+          if (hours < 0) {
+            hours = 23;
+            let days = parseInt(countdownValues[0].textContent);
+            days--;
+            
+            if (days < 0) {
+              days = 0;
+              hours = 0;
+              minutes = 0;
+              seconds = 0;
+            }
+            
+            countdownValues[0].textContent = days.toString().padStart(2, '0');
+          }
+          
+          countdownValues[1].textContent = hours.toString().padStart(2, '0');
+        }
+        
+        countdownValues[2].textContent = minutes.toString().padStart(2, '0');
+      }
+      
+      countdownValues[3].textContent = seconds.toString().padStart(2, '0');
+    }
+    
+    // Atualizar contagem regressiva a cada segundo
+    setInterval(updateCountdown, 1000);
+    
+    // Controles de Avaliações
+    const reviewCards = document.querySelectorAll('.review-card');
+    const reviewNext = document.querySelector('.reviews-controls .next');
+    const reviewPrev = document.querySelector('.reviews-controls .prev');
+    let currentReview = 0;
+    
+    function showReview(index) {
+      reviewCards.forEach(card => card.style.display = 'none');
+      reviewCards[index].style.display = 'block';
+    }
+    
+    function nextReview() {
+      currentReview = (currentReview + 1) % reviewCards.length;
+      showReview(currentReview);
+    }
+    
+    function prevReview() {
+      currentReview = (currentReview - 1 + reviewCards.length) % reviewCards.length;
+      showReview(currentReview);
+    }
+    
+    if (reviewCards.length > 0) {
+      showReview(0);
+      
+      if (reviewNext) reviewNext.addEventListener('click', nextReview);
+      if (reviewPrev) reviewPrev.addEventListener('click', prevReview);
+      
+      // Auto-rotação de avaliações
+      setInterval(nextReview, 8000);
+    }
+    
+    // Tabs de Produtos
+    const productTabs = document.querySelectorAll('.product-tab');
+    
+    productTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        productTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        // Em produção, aqui carregaria produtos diferentes com AJAX
+      });
+    });
+    
+    // Filtros de Categorias
+    const filterTags = document.querySelectorAll('.filter-tag');
+    
+    filterTags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        filterTags.forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+        // Em produção, aqui filtraria produtos
+      });
+    });
+  </script>
+
+</body>
+</html>

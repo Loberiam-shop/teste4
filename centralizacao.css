@@ -1,0 +1,182 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header .section-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Centralização de elementos */
+.products-grid, 
+.categorias-grid, 
+.sellers-grid, 
+.benefits-grid {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Ajuste para seção de vendedores */
+.featured-sellers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.seller-header {
+  width: 100%;
+  justify-content: center;
+}
+
+.seller-metrics {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Ajuste para informações de compra */
+.product-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Rodapé horizontal */
+.footer {
+  background-color: #111;
+  padding: 40px 0 20px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-contact-item {
+  justify-content: center;
+}
+
+.footer-social {
+  justify-content: center;
+}
+
+/* Ajuste para elementos empilhados */
+.live-commerce-banner,
+.app-container,
+.newsletter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajuste para filtros e categorias */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Ajuste para botões e ações */
+.view-more-container,
+.live-actions,
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Ajuste para elementos de produto */
+.product-meta,
+.product-rating,
+.product-price,
+.product-installments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-seller {
+  align-items: center;
+  text-align: center;
+}
+
+.seller-name {
+  justify-content: center;
+}
+
+/* Ajuste para seção de benefícios */
+.benefit-item {
+  justify-content: center;
+}
+
+/* Ajuste para newsletter */
+.newsletter-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Ajuste para responsividade */
+@media (max-width: 768px) {
+  .live-commerce-banner,
+  .app-container,
+  .newsletter-container {
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
